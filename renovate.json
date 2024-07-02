@@ -4,7 +4,7 @@
       "customType": "regex",
       "fileMatch": ["values.yaml$"],
       "matchStrings": [
-        "image:\\s+(?<depName>my\\.old\\.registry/aRepository/andImage):(?<currentValue>[^\\s]+)"
+        "image:\\s+(?<depName>docker\\.io/library/nginx):(?<currentValue>[^\\s]+)"
       ],
       "depNameTemplate": "docker.io/library/nginx",
       "autoReplaceStringTemplate": "image: {{{depName}}}:{{{newValue}}}",
